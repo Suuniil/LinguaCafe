@@ -26,22 +26,44 @@ japanese_nlp = spacy.load("ja_core_news_sm", disable = ['ner', 'parser'])
 japanese_nlp.add_pipe("custom_sentence_splitter", first=True)
 hiraganaConverter = pykakasi.kakasi()
 
-norwegian_nlp = spacy.load("nb_core_news_md", disable = ['ner', 'parser'])
+norwegian_nlp = spacy.load("nb_core_news_sm", disable = ['ner', 'parser'])
 norwegian_nlp.add_pipe("custom_sentence_splitter", first=True)
-norwegian_nlp.max_length = 2131689
 
-german_nlp = spacy.load("de_core_news_md", disable = ['ner', 'parser'])
+german_nlp = spacy.load("de_core_news_sm", disable = ['ner', 'parser'])
 german_nlp.add_pipe("custom_sentence_splitter", first=True)
 
-korean_nlp = spacy.load("ko_core_news_md", disable = ['ner', 'parser'])
+korean_nlp = spacy.load("ko_core_news_sm", disable = ['ner', 'parser'])
 korean_nlp.add_pipe("custom_sentence_splitter", first=True)
 
-spanish_nlp = spacy.load("es_core_news_md", disable = ['ner', 'parser'])
+spanish_nlp = spacy.load("es_core_news_sm", disable = ['ner', 'parser'])
 spanish_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+chinese_nlp = spacy.load("zh_core_web_sm", disable = ['ner', 'parser'])
+chinese_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+dutch_nlp = spacy.load("nl_core_news_sm", disable = ['ner', 'parser'])
+dutch_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+finnish_nlp = spacy.load("fi_core_news_sm", disable = ['ner', 'parser'])
+finnish_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+french_nlp = spacy.load("fr_core_news_sm", disable = ['ner', 'parser'])
+french_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+italian_nlp = spacy.load("it_core_news_sm", disable = ['ner', 'parser'])
+italian_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+swedish_nlp = spacy.load("sv_core_news_sm", disable = ['ner', 'parser'])
+swedish_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+ukrainian_nlp = spacy.load("uk_core_news_sm", disable = ['ner', 'parser'])
+ukrainian_nlp.add_pipe("custom_sentence_splitter", first=True)
+
+russian_nlp = spacy.load("ru_core_news_sm", disable = ['ner', 'parser'])
+russian_nlp.add_pipe("custom_sentence_splitter", first=True)
 
 # used for splitting and parsing text
 sentenceEndings = ['NEWLINE', '？', '！', '。', '?', '!', '.', '»', '«']
-wordEndings = [' ', '？', '！', '。', '?', '!', '.', ',', '"', '\'']
 duplicateRemovalRegex = '(TMP_ST){2,}'
 
 alphabetRegex = {
@@ -150,6 +172,30 @@ def tokenizeText(words, language):
 
     if language == 'spanish':
         doc = spanish_nlp(words)
+
+    if language == 'chinese':
+        doc = chinese_nlp(words)
+    
+    if language == 'dutch':
+        doc = dutch_nlp(words)
+    
+    if language == 'finnish':
+        doc = finnish_nlp(words)
+    
+    if language == 'french':
+        doc = french_nlp(words)
+    
+    if language == 'italian':
+        doc = italian_nlp(words)
+
+    if language == 'russian':
+        doc = russian_nlp(words)
+
+    if language == 'swedish':
+        doc = swedish_nlp(words)
+
+    if language == 'ukrainian':
+        doc = ukrainian_nlp(words)
 
     for sentenceIndex, sentence in enumerate(doc.sents):
         for token in sentence:
