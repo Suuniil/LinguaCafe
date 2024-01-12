@@ -44,7 +44,7 @@ spanish_nlp.add_pipe("custom_sentence_splitter", first=True)
 # dutch_nlp = spacy.load("nl_core_news_sm", disable = ['ner', 'parser'])
 # dutch_nlp.add_pipe("custom_sentence_splitter", first=True)
 
-finnish_nlp = spacy.load("fi_core_news_lg", disable = ['ner', 'parser'])
+finnish_nlp = spacy.load("spacy_fi_experimental_web_md", disable = ['ner', 'parser'])
 finnish_nlp.add_pipe("custom_sentence_splitter", first=True)
 
 # french_nlp = spacy.load("fr_core_news_sm", disable = ['ner', 'parser'])
