@@ -219,10 +219,10 @@ def tokenizeText(words, language):
                 gender = token.morph.get("Gender")
 
             final_lemma = token.lemma_
-            if language == 'finnish':#Lemma detection is unreliable for finnish!
-                word_pos = token.pos_
-                if word_pos == "NOUN" or word_pos == "VERB":#this is difficult to conjugate
-                    final_lemma = token.lower_
+            # if language == 'finnish':#Lemma detection is unreliable for finnish!
+            #     word_pos = token.pos_
+            #     if word_pos == "NOUN" or word_pos == "VERB":#this is difficult to conjugate
+            #         final_lemma = token.lower_
                 
 
             tokenizedWords.append({'w': word, 'r': ''.join(reading), 'l': final_lemma, 'lr': ''.join(lemmaReading), 'pos': token.pos_,'si': sentenceIndex, 'g': gender})
