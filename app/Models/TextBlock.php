@@ -287,10 +287,10 @@ class TextBlock
                 $encounteredWord['stage'] = 2;
                 $encounteredWord['translation'] = '';
 
-                // if ($encounteredWord['base_word'] == $encounteredWord['word']) {
-                //     $encounteredWord['base_word'] = '';
-                //     $encounteredWord['base_word_reading'] = '';
-                // }
+                if ($encounteredWord['base_word'] == $encounteredWord['word']) {
+                    $encounteredWord['base_word'] = '';
+                    $encounteredWord['base_word_reading'] = '';
+                }
 
                 $encounteredWordsToInsert[] = $encounteredWord;
             }
