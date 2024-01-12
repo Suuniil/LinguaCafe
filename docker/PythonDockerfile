@@ -7,6 +7,7 @@ RUN apt update -y
 #youtube api
 RUN apt install python3 -y
 RUN apt install pip -y
+RUN apt install libvoikko1 voikko-fi
 RUN pip install youtube_transcript_api
 
 #ebook library
@@ -22,7 +23,7 @@ RUN python3 -m spacy download nb_core_news_sm
 RUN python3 -m spacy download es_core_news_sm
 RUN python3 -m spacy download zh_core_web_sm
 RUN python3 -m spacy download nl_core_news_sm
-RUN python3 -m spacy download fi_core_news_lg
+RUN pip install spacy_fi_experimental_web_md
 RUN python3 -m spacy download fr_core_news_sm
 RUN python3 -m spacy download it_core_news_sm
 RUN python3 -m spacy download ru_core_news_sm
