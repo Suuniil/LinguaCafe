@@ -75,29 +75,29 @@ class DictionarySeeder extends Seeder
             ]);
         }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL ZH')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL ZH',
-                'database_table_name' => 'API',
-                'language' => 'chinese',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL ZH')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL ZH',
+        //         'database_table_name' => 'API',
+        //         'language' => 'chinese',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL NL')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL NL',
-                'database_table_name' => 'API',
-                'language' => 'dutch',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL NL')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL NL',
+        //         'database_table_name' => 'API',
+        //         'language' => 'dutch',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
         $dictionary = DB::table('dictionaries')->where('name', 'DeepL FI')->first();
         if (!$dictionary) {
@@ -111,76 +111,76 @@ class DictionarySeeder extends Seeder
             ]);
         }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL FR')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL FR',
-                'database_table_name' => 'API',
-                'language' => 'french',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL FR')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL FR',
+        //         'database_table_name' => 'API',
+        //         'language' => 'french',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL IT')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL IT',
-                'database_table_name' => 'API',
-                'language' => 'italian',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL IT')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL IT',
+        //         'database_table_name' => 'API',
+        //         'language' => 'italian',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL KO')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL KO',
-                'database_table_name' => 'API',
-                'language' => 'korean',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL KO')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL KO',
+        //         'database_table_name' => 'API',
+        //         'language' => 'korean',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL RU')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL RU',
-                'database_table_name' => 'API',
-                'language' => 'russian',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL RU')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL RU',
+        //         'database_table_name' => 'API',
+        //         'language' => 'russian',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL SV')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL SV',
-                'database_table_name' => 'API',
-                'language' => 'swedish',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL SV')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL SV',
+        //         'database_table_name' => 'API',
+        //         'language' => 'swedish',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
 
-        $dictionary = DB::table('dictionaries')->where('name', 'DeepL UA')->first();
-        if (!$dictionary) {
-            DB::table('dictionaries')->insert([
-                'name' => 'DeepL UA',
-                'database_table_name' => 'API',
-                'language' => 'ukrainian',
-                'color' => '#92B9E2',
-                'imported' => false,
-                'enabled' => false
-            ]);
-        }
+        // $dictionary = DB::table('dictionaries')->where('name', 'DeepL UA')->first();
+        // if (!$dictionary) {
+        //     DB::table('dictionaries')->insert([
+        //         'name' => 'DeepL UA',
+        //         'database_table_name' => 'API',
+        //         'language' => 'ukrainian',
+        //         'color' => '#92B9E2',
+        //         'imported' => false,
+        //         'enabled' => false
+        //     ]);
+        // }
     }
 }

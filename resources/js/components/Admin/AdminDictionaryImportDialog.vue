@@ -379,19 +379,7 @@
                 languages: [
                     {
                         selected: false,
-                        name: 'chinese'
-                    },
-                    {
-                        selected: false,
-                        name: 'dutch'
-                    },
-                    {
-                        selected: false,
                         name: 'finnish'
-                    },
-                    {
-                        selected: false,
-                        name: 'french'
                     },
                     {
                         selected: false,
@@ -399,15 +387,7 @@
                     },
                     {
                         selected: false,
-                        name: 'italian'
-                    },
-                    {
-                        selected: false,
                         name: 'japanese'
-                    },
-                    {
-                        selected: false,
-                        name: 'korean'
                     },
                     {
                         selected: false,
@@ -415,19 +395,7 @@
                     },
                     {
                         selected: false,
-                        name: 'russian'
-                    },
-                    {
-                        selected: false,
                         name: 'spanish'
-                    },
-                    {
-                        selected: false,
-                        name: 'swedish'
-                    },
-                    {
-                        selected: false,
-                        name: 'ukrainian'
                     },
                 ],
 
