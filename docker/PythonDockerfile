@@ -7,7 +7,7 @@ RUN apt update -y
 #youtube api
 RUN apt install python3 -y
 RUN apt install pip -y
-RUN apt install -y libvoikko1 voikko-fi
+RUN apt install libvoikko1 voikko-fi
 RUN pip install youtube_transcript_api
 
 #ebook library
