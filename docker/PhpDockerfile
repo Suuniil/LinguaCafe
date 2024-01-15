@@ -19,6 +19,8 @@ RUN apt install -y \
         zip \
         curl \
         unzip \
+        libvoikko1 \
+        voikko-fi \
     && docker-php-ext-configure gd \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install pdo_mysql \
